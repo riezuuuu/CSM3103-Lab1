@@ -1,0 +1,140 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9;
+}
+
+.header {
+    background-image: url('../img/milkbg.jpg');
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.description {
+    left: 50%;
+    top: 45%;
+    text-align: center;
+}
+
+.description h1 {
+    color: #fff;
+    font-size: 80px;
+    margin-top: 50px;
+}
+
+.description p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 50%;
+    min-width: 50%;
+    left: 350px;
+    top: 100px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.team .card-columns {
+    column-count: 4;
+}
+
+.team .card {
+    background: none;
+    border: none;
+}
+
+.team .card-title {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.background {
+    background: #dedec8;
+    padding: 4em 0;
+}
+
+.page-footer {
+    background-color: #19a7c0;
+    color: white;
+    padding: 60px 0 30px;
+    text-align: center;
+    font-size: large;
+}
+
+.red-box {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: smaller;
+}
+
+@media (max-width: 991.98px) {
+    .header {
+        height: 400px;
+    }
+
+    .overlay {
+        left: 200px;
+    }
+
+    .description {
+        left: 0;
+        top: 10%;
+        transform: none;
+    }
+
+    .description h1 {
+        font-size: 50px;
+    }
+
+    .description p {
+        font-size: 16px;
+    }
+
+    .team .card-columns {
+        column-count: 2;
+    }
+
+    .team .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .header {
+        height: 300px;
+    }
+
+    .overlay {
+        left: 0;
+        top: 5%;
+    }
+
+    .description {
+        top: 10%;
+    }
+
+    .description h1 {
+        font-size: 40px;
+    }
+
+    .description p {
+        font-size: 14px;
+    }
+
+    .team .card-columns {
+        column-count: 1;
+    }
+
+    .team .card {
+        margin-bottom: 20px;
+    }
+}
